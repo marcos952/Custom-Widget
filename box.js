@@ -2,7 +2,6 @@
 	let template = document.createElement("template");
 	template.innerHTML = `
                 <input type="submit" value="Active m">
-		
 	`;
 
 	class Box extends HTMLElement {
