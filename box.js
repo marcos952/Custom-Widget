@@ -1,7 +1,7 @@
 (function() { 
 	let template = document.createElement("template");
 	template.innerHTML = `
-		<input type="button" value=`${this._props["description"]}` style="width:96px; height: 32px;" >
+		<input type="button" value=this._props["description"] style="width:96px; height: 32px;" >
 	`;
 
 	class Box extends HTMLElement {
