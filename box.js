@@ -1,7 +1,7 @@
 (function() { 
 	let template = document.createElement("template");
 	template.innerHTML = `
-                <input type="submit" value="Active me¡">
+		<input type="button" value="Active me¡" style="width:96px; height: 32px;" >
 	`;
 
 	class Box extends HTMLElement {
