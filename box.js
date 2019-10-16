@@ -18,6 +18,7 @@
 
 		onCustomWidgetBeforeUpdate(changedProperties) {
 			this._props = { ...this._props, ...changedProperties };
+			console.log(`${this._props["description"]}`);
 		}
 
 		onCustomWidgetAfterUpdate(changedProperties) {
@@ -30,6 +31,7 @@
 			if ("description" in changedProperties) {
 				this.value = changedProperties["description"];
 			}
+			console.log(`${this._props["description"]}`);
 		}
 	}
 
