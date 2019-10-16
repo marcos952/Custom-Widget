@@ -47,7 +47,7 @@
 			}
 			
 			if ("description" in changedProperties) {
-				this._shadowRoot.getElementById("descriptionhtml").value = changedProperties["description"];
+				this._shadowRoot.getElementById("descriptionhtml").innerHTML = changedProperties["description"];
 			}
 
 			
