@@ -47,7 +47,7 @@
 			}
 			
 			if ("description" in changedProperties) {
-				this.style["background-color"] = changedProperties["colorinactive"];
+				this._shadowRoot.getElementById("description").value = changedProperties["description"];
 			}
 
 			
