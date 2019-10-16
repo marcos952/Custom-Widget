@@ -33,11 +33,11 @@
 				console.log(`${this._props["IsActive"]}`);
 				if ( changedProperties["IsActive"] == 0 )
 				{
-			        this.style["background-color"] = changedProperties["colorinactive"];
+			        this.style["background-color"] = this._props["colorinactive"];
 				}
 				else
 				{
-				this.style["background-color"] = changedProperties["coloractive"];
+				this.style["background-color"] = this._props["coloractive"];
 				}
 			}
 			if ("opacity" in changedProperties) {
