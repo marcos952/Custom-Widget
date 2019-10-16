@@ -47,7 +47,8 @@
 			}
 			
 			if ("description" in changedProperties) {
-				this._shadowRoot.getElementById("descriptionhtml").innerHTML = changedProperties["description"];
+				console.log(this);
+				shadowRoot.getElementById("descriptionhtml").innerHTML = changedProperties["description"];
 			}
 
 			
