@@ -2,7 +2,7 @@
 	let template = document.createElement("template");
 	template.id = 'id_template';
 	template.innerHTML = `
-		<input id="button_t" type="button" value="default" style="width:96px; height: 32px;" >
+		<input id="button_t" type="button" value="pepe" style="width:96px; height: 32px;" >
 	`;
 
 	class Box extends HTMLElement {
