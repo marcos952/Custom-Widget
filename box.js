@@ -29,7 +29,7 @@
 				this.style["opacity"] = changedProperties["opacity"];
 			}
 			if ("description" in changedProperties) {
-				var lv_children = this.children;
+				var lv_children = this;
 				console.log (lv_children);
 				/*value(changedProperties["description"]);*/
 			}
