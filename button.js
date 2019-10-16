@@ -12,7 +12,7 @@
 		</style> 
 	`;
 
-	class Box extends HTMLElement {
+	class ButtonA extends HTMLElement {
 		constructor() {
 			super(); 
 			let shadowRoot = this.attachShadow({mode: "open"});
@@ -30,7 +30,7 @@
 
 		onCustomWidgetAfterUpdate(changedProperties) {
 			if ("IsActive" in changedProperties) {
-				if  changedProperties["IsActive"] = "0"
+				if  changedProperties["IsActive"] = "No"
 				{
 				   this.style["background-color"] = blue;	
 				}
@@ -46,5 +46,5 @@
 		}
 	}
 
-	customElements.define("com-sample-box", Box);
+	customElements.define("com-sample-ButtonA", ButtonA);
 })();
