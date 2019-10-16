@@ -10,6 +10,7 @@
 			display: block;
 		} 
 		</style> 
+               <span id="hola">Text</span> 
 	`;
 
 	class boton extends HTMLElement {
@@ -42,6 +43,10 @@
 			}
 			
 			if ("colorinactive" in changedProperties) {
+				this.style["background-color"] = changedProperties["colorinactive"];
+			}
+			
+			if ("description" in changedProperties) {
 				this.style["background-color"] = changedProperties["colorinactive"];
 			}
 
