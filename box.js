@@ -1,5 +1,6 @@
 (function() { 
 	let template = document.createElement("template");
+	template.id = 'id_template';
 	template.innerHTML = `
 		<input id="button_t" type="button" value="default" style="width:96px; height: 32px;" >
 	`;
@@ -30,7 +31,7 @@
 			}
 			if ("description" in changedProperties) {
 				var lv_children = this;
-				console.log (lv_children);
+				console.log (lv_children.id);
 				/*value(changedProperties["description"]);*/
 			}
 			console.log(`${this._props["description"]}`);
