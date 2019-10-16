@@ -1,8 +1,15 @@
 (function() { 
 	let template = document.createElement("template");
 	template.innerHTML = `
-                <input type="submit" value="Active me¡">
-		
+		<style>
+		:host {
+			border-radius: 25px;
+			border-width: 4px;
+			border-color: black;
+			border-style: solid;
+			display: block;
+		} 
+		</style> 
 	`;
 
 	class Box extends HTMLElement {
@@ -22,8 +29,16 @@
 		}
 
 		onCustomWidgetAfterUpdate(changedProperties) {
-			if ("color" in changedProperties) {
-				this.style["background-color"] = changedProperties["color"];
+			if ("IsActive" in changedProperties) {
+				if  changedProperties["IsActive"] = "0"
+				{
+				   this.style["background-color"] = blue;	
+				}
+				else
+				{
+				   this.style["background-color"] = orange;
+				}
+
 			}
 			if ("opacity" in changedProperties) {
 				this.style["opacity"] = changedProperties["opacity"];
