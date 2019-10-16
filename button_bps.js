@@ -13,6 +13,10 @@
 						<td>Color Active</td>
 						<td><input id="color_active" type="text" size="5" maxlength="10"></td>
 					</tr>
+					<tr>
+						<td>Text in the button</td>
+						<td><input id="description" type="text" size="5" maxlength="10"></td>
+					</tr>
 				</table>
 				<input type="submit" style="display:none;">
 			</fieldset>
@@ -41,7 +45,8 @@
 					detail: {
 						properties: {
 							colorinactive: this.colorinactive,
-							coloractive: this.coloractive
+							coloractive: this.coloractive,
+							description: this.description
 						}
 					}
 			}));
@@ -60,6 +65,13 @@
 
 		get coloractive() {
 			return this._shadowRoot.getElementById("color_active").value;
+		}
+		set description(newDescription) {
+			this._shadowRoot.getElementById("description").value = newDescription;
+		}
+
+		get description() {
+			return this._shadowRoot.getElementById("description").value;
 		}
 		
 		
