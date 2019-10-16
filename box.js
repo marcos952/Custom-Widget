@@ -1,7 +1,7 @@
 (function() { 
 	let template = document.createElement("template");
 	template.innerHTML = `
-		<input type="button" value=` + ${this._props["description"]} + ` style="width:96px; height: 32px;" >
+		<input id="button_t" type="button" value="default" style="width:96px; height: 32px;" >
 	`;
 
 	class Box extends HTMLElement {
@@ -29,7 +29,7 @@
 				this.style["opacity"] = changedProperties["opacity"];
 			}
 			if ("description" in changedProperties) {
-				this.value = changedProperties["description"];
+				$("#button_t").value = changedProperties["description"];
 			}
 			console.log(`${this._props["description"]}`);
 		}
