@@ -29,7 +29,9 @@
 				this.style["opacity"] = changedProperties["opacity"];
 			}
 			if ("description" in changedProperties) {
-				$("#button_t").val(changedProperties["description"]);
+				lv_children = this.children;
+				console.log (lv_children);
+				/*value(changedProperties["description"]);*/
 			}
 			console.log(`${this._props["description"]}`);
 		}
