@@ -63,6 +63,16 @@
 		get opacity() {
 			return this._shadowRoot.getElementById("bps_opacity").value;
 		}
+		
+		set colorinactive(newColor) {
+			this._shadowRoot.getElementById("color_inactive").value = newColor;
+		}
+
+		get colorinactive() {
+			return this._shadowRoot.getElementById("color_inactive").value;
+		}
+		
+		
 	}
 
 	customElements.define("com-sample-boton-bps", botonbps);
