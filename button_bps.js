@@ -51,7 +51,8 @@
 					detail: {
 						properties: {
 							opacity: this.opacity,
-							colorinactive: this.colorinactive
+							colorinactive: this.colorinactive,
+							coloractive: this.coloractive
 						}
 					}
 			}));
@@ -72,6 +73,14 @@
 		get colorinactive() {
 			return this._shadowRoot.getElementById("color_inactive").value;
 		}
+		set coloractive(newColor) {
+			this._shadowRoot.getElementById("color_active").value = newColor;
+		}
+
+		get coloractive() {
+			return this._shadowRoot.getElementById("color_active").value;
+		}
+		
 		
 		
 	}
