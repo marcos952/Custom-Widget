@@ -50,7 +50,8 @@
 			this.dispatchEvent(new CustomEvent("propertiesChanged", {
 					detail: {
 						properties: {
-							opacity: this.opacity
+							opacity: this.opacity,
+							colorinactive: this.colorinactive
 						}
 					}
 			}));
