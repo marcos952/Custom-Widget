@@ -1,6 +1,5 @@
 (function() { 
 	let template = document.createElement("template");
-	template.id = 'id_template';
 	template.innerHTML = `
 		<input id="button_t" type="button" value="pepe" style="width:96px; height: 32px;" >
 	`;
@@ -30,7 +29,7 @@
 				this.style["opacity"] = changedProperties["opacity"];
 			}
 			if ("description" in changedProperties) {
-				document.getElementById("button_t").value = changedProperties["description"];
+				this.children[1].value = changedProperties["description"];
 				/*value(changedProperties["description"]);*/
 			}
 			console.log(`${this._props["description"]}`);
