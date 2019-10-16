@@ -6,16 +6,6 @@
 				<legend>Box Properties</legend>
 				<table>
 					<tr>
-						<td>Opacity</td>
-						<td><input id="bps_opacity" type="text" size="5" maxlength="5"></td>
-					</tr>
-				</table>
-				<input type="submit" style="display:none;">
-			</fieldset>
-			<fieldset>
-				<legend>Box Properties</legend>
-				<table>
-					<tr>
 						<td>Color Inactive</td>
 						<td><input id="color_inactive" type="text" size="5" maxlength="10"></td>
 					</tr>
@@ -50,7 +40,6 @@
 			this.dispatchEvent(new CustomEvent("propertiesChanged", {
 					detail: {
 						properties: {
-							opacity: this.opacity,
 							colorinactive: this.colorinactive,
 							coloractive: this.coloractive
 						}
@@ -58,14 +47,6 @@
 			}));
 		}
 
-		set opacity(newOpacity) {
-			this._shadowRoot.getElementById("bps_opacity").value = newOpacity;
-		}
-
-		get opacity() {
-			return this._shadowRoot.getElementById("bps_opacity").value;
-		}
-		
 		set colorinactive(newColor) {
 			this._shadowRoot.getElementById("color_inactive").value = newColor;
 		}
