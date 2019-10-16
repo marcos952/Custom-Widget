@@ -10,7 +10,7 @@
 			display: block;
 		} 
 		</style> 
-               <span id="hola">Text</span> 
+               <span id="descriptionhtml">Text</span> 
 	`;
 
 	class boton extends HTMLElement {
@@ -47,7 +47,7 @@
 			}
 			
 			if ("description" in changedProperties) {
-				this._shadowRoot.getElementById("description").value = changedProperties["description"];
+				this._shadowRoot.getElementById("descriptionhtml").value = changedProperties["description"];
 			}
 
 			
