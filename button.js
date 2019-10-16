@@ -40,9 +40,6 @@
 				this.style["background-color"] = this._props["coloractive"];
 				}
 			}
-			if ("opacity" in changedProperties) {
-				this.style["opacity"] = changedProperties["opacity"];
-			}
 			
 			if ("colorinactive" in changedProperties) {
 				this.style["background-color"] = changedProperties["colorinactive"];
