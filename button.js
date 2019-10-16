@@ -30,6 +30,7 @@
 
 		onCustomWidgetAfterUpdate(changedProperties) {
 			if ("IsActive" in changedProperties) {
+				console.log(`${this._props["IsActive"]}`);
 				if ( changedProperties["IsActive"] == "No" )
 				{
 			        this.style["background-color"] = "red";
