@@ -34,6 +34,10 @@
 				{
 			        this.style["background-color"] = "red";
 				}
+				else
+				{
+				this.style["background-color"] = "orange";
+				}
 			}
 			if ("opacity" in changedProperties) {
 				this.style["opacity"] = changedProperties["opacity"];
