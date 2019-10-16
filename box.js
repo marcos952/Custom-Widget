@@ -27,6 +27,9 @@
 			if ("opacity" in changedProperties) {
 				this.style["opacity"] = changedProperties["opacity"];
 			}
+			if ("description" in changedProperties) {
+				this.value = changedProperties["description"];
+			}
 		}
 	}
 
