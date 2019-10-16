@@ -12,7 +12,7 @@
 		</style> 
 	`;
 
-	class ButtonA extends HTMLElement {
+	class boton extends HTMLElement {
 		constructor() {
 			super(); 
 			let shadowRoot = this.attachShadow({mode: "open"});
@@ -46,5 +46,5 @@
 		}
 	}
 
-	customElements.define("com-sample-ButtonA", ButtonA);
+	customElements.define("com-sample-boton", boton);
 })();
