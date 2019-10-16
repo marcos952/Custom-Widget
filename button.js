@@ -30,7 +30,7 @@
 
 		onCustomWidgetAfterUpdate(changedProperties) {
 			if ("IsActive" in changedProperties) {
-			        this.style["background-color"] = orange;
+			        
 			}
 			if ("opacity" in changedProperties) {
 				this.style["opacity"] = changedProperties["opacity"];
