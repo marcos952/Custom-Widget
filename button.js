@@ -46,12 +46,6 @@
 				this.style["background-color"] = changedProperties["colorinactive"];
 			}
 			
-			if ("description" in changedProperties) {
-				console.log(this);
-				shadowRoot.getElementById("descriptionhtml").innerHTML = changedProperties["description"];
-			}
-
-			
 		}
 	}
 
