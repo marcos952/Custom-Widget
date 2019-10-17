@@ -10,7 +10,6 @@
 			display: block;
 		} 
 		</style> 
-               <span id="descriptionhtml">Text</span> 
 	`;
 
 	class boton extends HTMLElement {
